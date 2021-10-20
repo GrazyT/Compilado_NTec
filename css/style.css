@@ -1,0 +1,99 @@
+/*FOLHA DE ESTILO TIPO: EXTERNO*/
+/*
+    Existem 3 tipos de seletores
+
+    tag - CSS= ex.: body{} HTML= <body></body>  -> muda somente uma tag especifica.
+    class - CSS= ex.: .bgPink{} HTML= <p class="bgPink"></p>  -> arremete o atributo .
+    id - CSS= ex.: #blue{} HTML= <p id="blue"></p>  -> funciona da mesma forma que o class.
+
+    *não é recomendado utilizar o mesmo id em elementos diferentes!
+*/  
+/*
+    COR
+    0 presença/255 ausência = mais escuro/menos escuro
+        R 0-255
+        G 0-255
+        B 0-255
+        A 0-1 (canal alpha = transparência)
+    *em algumas IDEs como o VSCode por ex podem mostrar uma tabela de cor que pode facilitar na escolha das cores =)    
+
+    HEXADECIMAL
+        #123456789abcdef = pode utilizar esses numeros e letras para formar cores hexadecimais.
+        #RRGGBB
+    *o hexadecimal pode ser um pouco mais complicado para aplicar o alpha.
+    *se digitar uma cor hexadecimal no google ele vai mostrar um seletor de cores hexadecimais.
+
+    COD
+        color: (cor); - cor do texto
+        background-color: (cor); - cor do fundo (seja fundo do texto ou o fundo do site mesmo)
+*/
+/*
+    *PODE TER MAIS DE UMA FOLHA DE ESTILO, FAÇA QUANTAS FOREM NECESSÁRIAS
+    *OLHE OS ARQUIVOS ENQUANTO FAZ ISSO PARA SE ORIENTAR :)
+*/
+
+
+h1{
+    font-family: sans-serif;
+    font-size: 50px;
+    text-align: center;
+}
+body{
+    background-color:rgb(236, 234, 234)   
+}
+
+.txt{
+    font-family: sans-serif;
+    margin: 50px;
+    text-align: center;
+    font-size: 30px;
+    
+}
+
+.corF{
+    font-family: sans-serif;
+    color: rgb(255, 0, 170);
+    text-align: center;
+    font-size: 30px;
+}
+
+.corBF{
+    font-family: sans-serif;
+    background-color: green;
+    text-align: center;
+    font-size: 30px;
+}
+
+.tamF{
+    font-family: sans-serif;
+    font-size: 50px;
+    text-align: center;
+}
+
+.fonte{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    font-size: 30px;
+}
+
+.txtLonge{
+    font-family: sans-serif;
+    margin-top: 100px;
+    text-align: center; 
+    font-size: 30px;
+}
+
+a{
+    text-align: left;
+    font-size: 50px;
+}
+
+figcaption{
+    margin-bottom: 50px;
+    
+}
+/*
+.img{
+    
+    
+}*/
