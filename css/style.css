@@ -1,4 +1,5 @@
 /*FOLHA DE ESTILO TIPO: EXTERNO*/
+
 /*
     Existem 3 tipos de seletores
 
@@ -7,7 +8,8 @@
     id - CSS= ex.: #blue{} HTML= <p id="blue"></p>  -> funciona da mesma forma que o class.
 
     *não é recomendado utilizar o mesmo id em elementos diferentes!
-*/  
+*/
+
 /*
     COR
     0 presença/255 ausência = mais escuro/menos escuro
@@ -27,73 +29,191 @@
         color: (cor); - cor do texto
         background-color: (cor); - cor do fundo (seja fundo do texto ou o fundo do site mesmo)
 */
+
 /*
     *PODE TER MAIS DE UMA FOLHA DE ESTILO, FAÇA QUANTAS FOREM NECESSÁRIAS
     *OLHE OS ARQUIVOS ENQUANTO FAZ ISSO PARA SE ORIENTAR :)
 */
 
-
-h1{
+h1 {
     font-family: sans-serif;
     font-size: 50px;
     text-align: center;
 }
-body{
-    background-color:rgb(236, 234, 234)   
+
+body {
+    background-color: rgb(236, 234, 234)
 }
 
-.txt{
+.txt {
     font-family: sans-serif;
     margin: 50px;
     text-align: center;
     font-size: 30px;
-    
 }
 
-.corF{
+.corF {
     font-family: sans-serif;
     color: rgb(255, 0, 170);
     text-align: center;
     font-size: 30px;
 }
 
-.corBF{
+.corBF {
     font-family: sans-serif;
     background-color: green;
     text-align: center;
     font-size: 30px;
 }
 
-.tamF{
+.tamF {
     font-family: sans-serif;
     font-size: 50px;
     text-align: center;
 }
 
-.fonte{
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+.fonte {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-align: center;
     font-size: 30px;
 }
 
-.txtLonge{
+.txtLonge {
     font-family: sans-serif;
     margin-top: 100px;
-    text-align: center; 
+    text-align: center;
     font-size: 30px;
 }
 
-a{
+a {
     text-align: left;
     font-size: 50px;
 }
 
-figcaption{
+figcaption {
     margin-bottom: 50px;
-    
 }
+
 /*
 .img{
     
     
 }*/
+
+/* Michelle Horn */
+
+.box {
+    width: 150px;
+    height: 150px;
+    border: 2px solid black;
+    background-color: rgb(195, 241, 195);
+}
+
+.positionRelative {
+    position: relative;
+    left: 20px;
+    background-color: rgb(245, 149, 149);
+    z-index: -1; /*sobreposto ou abaixo*/
+}
+
+.positionFixedTop {
+    position: fixed;
+    top: 0;
+    right: 20px;
+    background-color: rgb(208, 167, 246);
+}
+
+.positionFixedBottom {
+    position: fixed;
+    bottom: 0;
+    right: 20px;
+    background-color: rgb(208, 167, 246);
+}
+
+.positionAbsolute {
+    position: absolute;
+    top: 250px;
+    left: 200px;
+    background-color: rgb(167, 192, 246);
+}
+
+.positionSticky {
+    position: sticky;
+    top: 5px;
+    background-color: rgb(246, 221, 167);
+}
+
+
+
+/*BANDEIRAS*/
+
+.qJapao{
+    width: 400px;
+    height: 200px;
+    background-color: white;
+    border: 1px solid black;
+}
+.bJapao{
+    width: 100px;
+    height: 100px;
+    background-color: brown;
+    border-radius: 100px;/*borda arredondada*/
+    margin-bottom: 50px;
+    margin: 50px;
+    margin-left: 137px;
+}
+
+.qAlemanha{
+    width: 400px;
+    height: 200px;
+    background-color: yellow;
+    margin-top: 20px;
+    border: 1px solid black;
+}
+.vAlemanha{
+    width: 400px;
+    height: 66px;
+    background-color: black;
+}
+.aAlemanha{
+    width: 400px;
+    height: 66px;
+    background-color: red;
+    
+}
+
+.qIndonesia{
+    width: 400px;
+    height: 200px;
+    background-color: white;
+    margin-top: 20px;
+    border: 1px solid black;
+}
+.bIndonesia{
+    width: 400px;
+    height: 100px;
+    background-color: red;
+}
+
+.qCanada{
+    width: 400px;
+    height: 200px;
+    background-color: red;
+    margin-top: 20px;
+    border: 1px solid black;
+}
+
+.imgFolha{
+    width: 100px;
+    height: 100px;
+    margin: 50px 50px;
+    background-position: center;
+}
+
+.qBranco{
+    width: 50%;
+    height: 100%;
+    background-color: white;
+    background-position: center;
+    margin-left: 95px;
+}
