@@ -86,8 +86,50 @@ body {
 }
 
 a {
-    text-align: left;
-    font-size: 50px;
+    text-decoration: none; /*tira o traço do link*/
+}
+
+ul{
+    list-style: none; /*tira o ponto da lista*/
+    margin: 0;
+    padding-left: 0;
+    background-color:rgb(255, 210, 210);
+}
+
+li{
+    display: block;
+    float: left;
+    padding: 1rem;/*altura das caixas do menu*/
+    position: relative;
+    text-decoration: none;
+    transition-duration: 0.5s;/*usa o tempo q quiser*//*é um fade quando passa o mouse*/
+    background-color:rgb(255, 210, 210);
+}
+
+li a{
+    color: crimson;
+
+}
+
+/*hover é um evento de passagem de mouse... quando passar o mouse em cima, o link vai ficar na cor selecionada*/
+li:hover{
+    background-color: darkred;
+}
+/*primeiro ul e o segundo ul é oque esta dentro do primeiro ul*/
+/*drop menu*/
+ul li ul{
+    visibility: hidden;/*esconde*/
+    opacity: 0;
+    position: absolute; /*esse elemento tem que ficar a frente de outros elementos*/
+    margin: 1rem;
+    left: 0rem; /*tirar o espaçamento esquerdo*/
+    display: none; /*fique oculto*/
+}
+/*a ,(virgula) inicia uma nova herança, atribui alguma config para todos os elementos*/
+ul li:hover > ul, ul li ul:hover{
+    visibility: visible;
+    opacity: 1;
+    display: block;
 }
 
 figcaption {
