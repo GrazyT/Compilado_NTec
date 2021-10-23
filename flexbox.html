@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+</head>
+<style>
+    h1, p{
+        text-align: center;
+    }
+
+    .container{
+        max-width: 400px;
+        border: 1px solid #ccc;
+        margin: 0 auto;
+    }
+
+    .lista{
+        margin: 5px; /*altura da lista*/
+        background: darkcyan;
+        text-align: center;
+        font-size: 1.5em;
+    }
+    
+    .flex{
+        display: flex; /*faz a lista ficar na vertical*/
+    }
+
+    .col1{
+        width: 25%;
+    }
+
+    .flex-wrap{
+        flex-wrap: wrap; /*lista na horizontal*/
+    }
+</style>
+
+<body>
+    <h1>Flexbox</h1>
+    <p>Horizontal</p>
+    <section class="container">
+        <div class="lista">1</div>
+        <div class="lista">2</div>
+        <div class="lista">3</div>
+        <div class="lista">4</div>
+    </section>
+    <p>Vertical</p>
+    <section class="container flex">
+        <div class="lista">1</div>
+        <div class="lista">2</div>
+        <div class="lista">3</div>
+        <div class="lista">4</div>
+    </section>
+</body>
+</html>
