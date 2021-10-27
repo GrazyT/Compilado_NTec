@@ -93,27 +93,45 @@ ul{
     list-style: none; /*tira o ponto da lista*/
     margin: 0;
     padding-left: 0;
-    background-color:rgb(255, 210, 210);
+    background-color:#AB3BD2;
+    
 }
 
 li{
+    position: relative;
     display: block;
     float: left;
     padding: 1rem;/*altura das caixas do menu*/
-    position: relative;
     text-decoration: none;
     transition-duration: 0.5s;/*usa o tempo q quiser*//*é um fade quando passa o mouse*/
-    background-color:rgb(255, 210, 210);
+    background-color:#AB3BD2;
+    border: 1px solid #9337B4;
+  
+    
+
+   /* position: absolute;
+    width: 1342px;
+    height: 115px;
+    left: 596px;
+    top: 30px;
+
+    background: #AB3BD2;
+    border: 1px solid #9337B4;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 49.5px 0px;*/
 }
 
 li a{
-    color: crimson;
+    color: rgb(255, 255, 255);
+    font-family: 'Saira', sans-serif;
+    
 
 }
 
 /*hover é um evento de passagem de mouse... quando passar o mouse em cima, o link vai ficar na cor selecionada*/
 li:hover{
-    background-color: darkred;
+    background-color: #8e27b1;
 }
 /*primeiro ul e o segundo ul é oque esta dentro do primeiro ul*/
 /*drop menu*/
@@ -124,12 +142,17 @@ ul li ul{
     margin: 1rem;
     left: 0rem; /*tirar o espaçamento esquerdo*/
     display: none; /*fique oculto*/
+    
+    
+    
 }
 /*a ,(virgula) inicia uma nova herança, atribui alguma config para todos os elementos*/
 ul li:hover > ul, ul li ul:hover{
     visibility: visible;
     opacity: 1;
     display: block;
+    
+    
 }
 
 figcaption {
