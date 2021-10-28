@@ -9,11 +9,13 @@
 </head>
 <style>
     .calc {
-        max-width: 400px;
+        margin: 0;
+        width: 400px;
         height: 400px;
         border: 1px solid rgb(49, 49, 49);
         background: rgb(43, 43, 43);
-        margin: 0 auto;/*centralizou*/
+        margin: 0 auto;
+        /*centralizou*/
         border-radius: 10%;
         box-shadow: 4px 10px 10px 1px rgba(0, 0, 0, 0.795);
     }
@@ -29,29 +31,49 @@
         border-radius: 10%;
         box-shadow: inset 5px 5px 2px 1px rgb(59, 59, 59);
     }
-    
-    .cont{
-        max-width: 400px;
+
+    .cont {
+        width: 400px;
         margin: 0 auto;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        
+
     }
 
-    .num{
-        margin: 10px; /*altura da lista*/
+    .num {
+        margin: 10px;
+        /*altura da lista*/
         background: rgb(99, 99, 99);
         text-align: center;
         font-size: 3.0em;
         color: white;
         font-family: Arial, Helvetica, sans-serif;
         width: 50%;
-        flex-basis: 70px;/*tamanho padrao do elemento*/
-        flex-grow: 1; /*estica os elementos para ocupar o espaço no conteiner flex. valores 1 e 2*/
+        flex-basis: 70px;
+        /*tamanho padrao do elemento*/
+        flex-grow: 1;
+        /*estica os elementos para ocupar o espaço no conteiner flex. valores 1 e 2*/
         /*flex-shrink: ; faz o inverso do flex grow, ele diminui os elementos caso nao caiba*/
         border-radius: 100%;
         box-shadow: inset 3px 3px 2px 1px rgb(59, 59, 59);
+    }
+
+    @media (max-width: 700px) {
+        .calc {
+            width: 700px;
+            height: 400px;
+        }
+        .cont{
+            margin:auto;
+            
+        }
+        .num{
+            margin: 10px 15px;
+            border-radius: 0px;
+            font-size: 40px;
+            flex-grow: 1;
+        }
     }
 </style>
 
@@ -77,7 +99,7 @@
             <div class="num">=</div>
         </section>
     </section>
-    
+
 </body>
 
 </html>
