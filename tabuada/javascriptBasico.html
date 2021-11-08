@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de sites: HTML basico</title>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" /> -->
+    <!-- <link rel="stylesheet" href="assets/css/style.css" /> -->
+    <script>
+        //Isso é um comentário de uma linha
+        /*
+        Isso é um comentário
+        de múltiplas linhas
+        */
+        let som, sub, div, mul, valor1, valor2;
+        valor1 = 1;
+        valor2 = 2;
+        //alirimetica
+        som = valor1 + valor2;
+        sub = valor1 - valor2;
+        div = valor1 / valor2;
+        mul = valor1 * valor2;
+        // console.log(som, sub, div, mul);
+        //operadores comparação
+        /* 
+        > maior que
+        >= maior ou igual
+        < menor que
+        <= menor ou igual
+        == igual a
+        === igual e do mesmo tipo
+        != diferente de
+
+        operadores logicos
+
+        && e
+        || ou
+        ! negação
+        
+        tipos de variaveis
+        string - texto
+        int - inteiros
+        float - ponto flutuante
+        double - double precisão
+        boolean - true ou false
+
+
+        Estruturas de repetição
+        for
+        while
+        do while
+        "2"+"2" = 22 
+        2 + 2 = 4
+
+        1 fogão eletrico a gas
+        1 panela completa
+        Milho de pipoca
+        Manteiga
+        colher de sopa
+        vc está em uma cozinha
+
+        */
+        let lista = document.getElementById("item");
+
+    </script>
+    <!-- <script src="basico.js"></script> -->
+</head>
+
+<body>
+    <header>
+        <section>
+            <p>C3bola</p>
+        </section>
+        <nav>
+
+        </nav>
+    </header>
+    <br><br>
+    <main>
+        <!-- <script>
+            for (let i = 0; i <= 10; i++) {
+                // console.log("2 X " + i + " = " + valor2 * i);
+                // document.write("2 X " + i + " = " + valor2 * i + "<br>");
+                document.write("<li>" + "2 X " + i + " = " + valor2 * i + "</li>");
+            }
+        </script> -->
+        <div id="tabuada"></div>
+        <input type="number" id="valor">
+        <button onclick="tabuada()">inserir</button>
+        <script>
+            function tabuada() {
+                let valor = document.getElementById('valor').value;
+                /*for (let i = 0; i <= 10; i++) {
+                    let exibir = valor + " X " + i + " = " + valor * i;
+                    console.log(exibir);
+                    document.getElementById('tabuada').innerHTML += exibir + "<br>";
+                }*/
+                // 
+                //let valor = document.getElementById('valor').value;
+                let exibir = '';
+                for (let i = 0; i <= 10; i++) {
+                    exibir += valor + " X " + i + " = " + valor * i + "<br>";
+                    console.log(exibir);
+                }
+                document.getElementById('tabuada').innerHTML = exibir;
+            }
+            function consumoVeiculo(){
+                /*
+                litros por km
+                600km/40lts = 15km/lts
+
+                40lts
+                0km
+
+                112km
+                3lts
+                112km/3lts = 37.33km/lts
+
+                let vm,espaco,tempo;
+                vm = espaco/tempo;
+                */
+            }
+        </script>
+    </main>
+    <footer>
+        Curso de sites Novatec by C3bola
+    </footer>
+</body>
+
+</html>

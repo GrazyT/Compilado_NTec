@@ -6,18 +6,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora</title>
+    <script src="basico.js"></script>
 </head>
+
 <style>
     .calc {
         margin: 0;
         width: 400px;
-        height: 400px;
+        height: 475px;
         border: 1px solid rgb(49, 49, 49);
         background: rgb(43, 43, 43);
         margin: 0 auto;
         /*centralizou*/
         border-radius: 10%;
-        box-shadow: 4px 10px 10px 1px rgba(0, 0, 0, 0.795);
+        box-shadow: 3px 3px 3px 1px rgba(92, 92, 92, 0.795);
     }
 
     .display {
@@ -29,7 +31,8 @@
         font-family: Arial, Helvetica, sans-serif;
         text-align: right;
         border-radius: 10%;
-        box-shadow: inset 5px 5px 2px 1px rgb(59, 59, 59);
+        box-shadow:  3px 3px 2px 1px rgb(59, 59, 59);
+        cursor: text;
     }
 
     .cont {
@@ -55,8 +58,12 @@
         flex-grow: 1;
         /*estica os elementos para ocupar o espaço no conteiner flex. valores 1 e 2*/
         /*flex-shrink: ; faz o inverso do flex grow, ele diminui os elementos caso nao caiba*/
-        border-radius: 100%;
-        box-shadow: inset 3px 3px 2px 1px rgb(59, 59, 59);
+        border-radius: 20%;
+        box-shadow:  2px 2px 2px 1px rgb(39, 39, 39);
+        cursor: pointer;
+    }
+    .num:hover{ /*quando passar o mouse*/
+        background-color: rgb(47, 47, 47);
     }
 
     @media (max-width: 700px) {
@@ -79,27 +86,29 @@
 
 <body>
     <section class="calc">
-        <div class="display">0</div>
+        <div class="display"></div>
         <section class="cont">
-            <div class="num">7</div>
-            <div class="num">8</div>
-            <div class="num">9</div>
-            <div class="num">%</div>
-            <div class="num">4</div>
-            <div class="num">5</div>
-            <div class="num">6</div>
-            <div class="num">X</div>
-            <div class="num">3</div>
-            <div class="num">2</div>
-            <div class="num">1</div>
-            <div class="num">-</div>
-            <div class="num">0</div>
-            <div class="num">.</div>
-            <div class="num">+</div>
-            <div class="num">=</div>
+            <div class="num n" onclick="inserir(7)">7</div>
+            <div class="num n" onclick="inserir(8)">8</div>
+            <div class="num n" onclick="inserir(9)">9</div>
+            <div class="num C" onclick="clean()">C</div>
+            <div class="num n" onclick="inserir(4)">4</div>
+            <div class="num n" onclick="inserir(5)">5</div>
+            <div class="num n" onclick="inserir(6)">6</div>
+            <div class="num s" onclick="inserir('+')">+</div>
+            <div class="num n" onclick="inserir(1)">1</div>
+            <div class="num n" onclick="inserir(2)">2</div>
+            <div class="num n" onclick="inserir(3)">3</div>
+            <div class="num s" onclick="inserir('-')">-</div>
+            <div class="num n" onclick="inserir(0)">0</div>
+            <div class="num s" onclick="inserir('.')">.</div>
+            <div class="num s" onclick="inserir('*')">X</div>
+            <div class="num s" onclick="inserir('%')">%</div>
+            <div class="num =" onclick="calcular()">=</div>
+            
         </section>
     </section>
-
+  
 </body>
 
 </html>
